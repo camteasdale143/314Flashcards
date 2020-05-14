@@ -1,0 +1,5 @@
+events on an operating system are always signalled by either a | interrupt or a trap (exception)
+a trap (or exception) is a | software generated interrupt caused either by an error or a request from a user program to perform an operating system service
+for each type of interrupt separate segments of code in the operating system determine | what action should be taken
+dual mode in an operating system means | hardware support that allows us to differentiate among various modes of execution (user mode and kernel mode)
+

@@ -1,0 +1,21 @@
+what does an operating system do | 1.it manages the computer hardware 2. provides a basis for application programs and 3. acts as an intermediary between the computer user and the computer hardware.
+operating systems are designed to be what two adjectives? | convenient and efficient or somecombination of the two
+a computer can be seperated into four components| hardware, operating system, application programs, and users
+what are the important aspects of the hardware | the cpu, the memory, and io devices
+what does the hardware do | provides the basic computing resources for the system
+what do application programs do | difen ways in which these resources are usde to solve user's computing problems
+how does operating system interact with teh hardware  and application programs | controls the hardware and coordinates it's use among the various application programs for users. provides the means for proper use of those resources in the operation of a computer system
+why are operating systems like a governments | it performs no useful function by itself, it provides an environment where other programs can do useful work.
+if a user sits in front of a pc with a monitor, keyboard, mouse and system unit, and is optimized for one user, the system is optimized for | ease of use as opposed to resource allocation
+if the user sits at a terminal connected to a mainframe or a minicomputer, with other users accessing the same computer and the users share resources to exchanginformation what is the os optimized for | resources utilization, makes sure all cpu time, memory and io are used efficiently.
+user sits at workstations connected to networks of other workstation servers, where each user has dedicated resources but also share resources | the os is made to comprimize between individual usability and resource utilization.
+a mobile computer is optimized for | individual usability but also performance per unit of batery life.
+from a systems view the os is seen as a | resource allocator
+what resources does the computer system have available to it | cpu time, memory space, file-storage space, io
+facing numerous and possibly conflicting requests for resources, os's decide | how to allocate specific programs to users so it can operate the computer system efficiently and fairly.
+an operating system is a control program, meaning it | manages the execution of user programs to prevent errors and improper use of the computer. especially concerned with operation / control of io
+what is the goal of a computer system | to execute user programs and make solving user promlems easier
+program definition of an operating system | one program running at all times on the computer - usually called the kernel
+system programs are | programs associated with eth operating system but are not the kernel
+application programs are | programs not associated with teh operating system
+

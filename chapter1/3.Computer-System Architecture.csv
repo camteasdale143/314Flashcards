@@ -1,0 +1,40 @@
+computer systems can be categorized by what |the number of general purpose precessors used
+on a single processor system, there is one main CPU which can | execute a general purpose instruction set including instructions from user processes
+most single processors also have other processors which are | special purpose, may come as device specific processors like keyboard or graphics controllers or more general io processors to move data rapidly
+special purpose processors run | a limited instruction set and do not run user processes
+special purpose processors can be managed by the operating system such that the operating system sends them | information about tehir next task and monitors their status
+special purpose processors can be low level components built into hardware such that | they perform autaunomously and do not communicate with teh os
+multiprocessors systems have | two or more processors in close communication
+multiprocessor systems share what accross processors | the computer bus and the clock, memory, and peripheral devices
+multiprocessor systems are better than singel processor systems because of what 3 things | 1. increased throughput2. economy of scale (share resources accross processors) 3. increased reliability (one breaks they don't all break)
+for a system to be able to provide service proportional to the level of surviving hardware is called | graceful degradation
+a system is fault tolerant if it can | suffer a failure of any singel component and continue operation
+asymmetric multiprossessing means | each processor is assigned a task, a master processor controls the system while the others look to the master for tasks
+symmetric multiprocessing (SMP) means | each processor performs all tasks within an os, processors are peers
+in an SMP architecture each processor has it's own | set of registers + private / local cache
+in an SMP architecture each processor shares | physical memory
+solaris is an a commercial version of unix which runs what architecture | symmetric multiprocessing (SMP)
+in a symmetric multiprocessing system (SMP) _ processes can run if there are _ cpus without a deterioration in performance | N, N
+if one cpu is sitting idle while another is overloaded, it is probably a | SMP system
+the difference between symmetric and asymmetric multiprocessing can result from either | hardware or software
+multiprocessing can cause a system to change it's memory access mode from _ to _ | UMA to NUMA
+UMA is the situation where | acces to any ram from the cpu takes the same amounto f time
+NUMA is the situation where | some parts of memory take longer to access than other parts (performance penalty)
+multiple cores on a single chip are | mure efficient than multiple chips with single cores due to on-chip communication and less power usage
+multicore systems are good for | server systems (dbs and web servers)
+multipcore cpus appear to the operating system as | N standard processors
+blade servers are what | computer archetectures where multiple processor boards + io boards and networking boards are placed in the same chasis such that each board boots independently and runs it's own os
+in essence blade servers ocnsiste of | multiple independendent multiprocessor systems
+a clustered system is a system which |two or more individual systems / nodes are joined together
+it is accepted that | clustered comptuers share storage and are linked closely via a LAN 
+clustering will continue to provide service ever if one or more systems in the cluster fails meaning it is | high availability
+Beowulf clusters are designed for | solving high performance comptuing tasks
+beowulf clusters are built with | commodity hardware
+beowulf clusters are connected over a | lan
+high availablitiy is obtained by adding a layer of software on specific nodes to monitor other nodes and | take ownership of their storage and restart their applications if a machine fails
+asymmetric clustering suggests that one machine is in | hot standby mode while the other is running the applications, if the runner fails the other picks up where the other left off
+symmetric clustering suggests that two or more hosts are | running applications and monitoring each other.
+clusters that provide high-performance computing environments are fast but must have specially written software that takes advantage of | parallelization, (dividing a program into separate components that run in parallel on individual computers in the cluster)
+parallel clusters allow multiple hosts to | access the same data on shared storage\
+a SAN allows | many systems to attach to a pool of storage
+

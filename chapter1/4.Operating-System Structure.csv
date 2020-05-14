@@ -1,0 +1,18 @@
+multiprogram increases CPU utilization by | organizing jobs (code & data) so that the CPU always has something to execute
+since main memory is too small to accommodate all jobs jobs are kept | on the disk in the job pool
+the job pool consists of all porcesses | residing on the disk, awaiting allocation of main memory
+the set of jobs in main memory is a subset of the jobs in | the job pool
+when multiprogramming, the os picks and job to execute and then| executes until it has to wait for some task such as io to complete at which point it switches to another task
+multiprogrammed systems give an environment in which system resources are | used effectively but do not provide user interaction
+Time sharing means the cpu executes multiple jobs by | switching among them so quickly that it seems to a user like it's running multiple at the same time
+time sharing requires what type of system | an interactive system.
+a time-shared operating system uses CPU scheduling and multiprogramming to provide each user with | a small portion of time shared computer
+a program loaded into memory and executing is called | a process.
+when a process executes it only runs for | a short amount of time before it finishes or needs to do io.
+if several jobs are ready to be brought into memor but there is not enough room for all of them the system must employ | job scheduling
+in a time sharing system the os ensures reasonable response time which is accomplished through | swapping
+swapping is the procedure where | processes are swapped in and out of main memory to disk
+virtual memory is a technique that allows | the execution of a process not completely in memory
+the advantage of virtual memory is that it allows users to run programs that are | larger than physical memory
+virtual memory abstracts main memory into a | larg uniform array of storage 
+

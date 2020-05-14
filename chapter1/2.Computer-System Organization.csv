@@ -1,0 +1,52 @@
+general purpose computer systems consist of | one or more cpu's and a number of device controllers connected through a common bus
+common busses do what | provide access to shared memory
+device conctrollers are in charge of | a specific type of device (disk drive, audio device, video display).
+cpu and device controllers can executer in what manner | concurrently - competing for memory cycles
+a memory controller does what | synchronizes acces to memory to ensure orderly access to shared memory
+the initial simple program that starts a computer is called | a bootstrap program
+the bootstrap program is stored in either | ROM or EEPROM (Firmware)
+what does the bootstrap program do | initializes all aspects of the system, from cpu registers to device controllers to memory contents
+the bootstrap program must know how to | load the operating system and how to start executing that system.
+in order to load the operating system, the bootstrap program must | locate and load the oprating system kernel
+upon loading and running the first process (the init) the operating system does what | waits for an event to occur
+occurring events are signalled by | interrupts from either software or hardware
+how does hardware trigger an interupt | by sending a signal to the CPU by way of the system bus. 
+how does software trigger an interrupt | by executing a system call
+when the cpu is interrupted it | stops what it is doing and immediately transfers execution to a fixed location
+the interupt fixed location contains | the starting address where the serviec routine for the interrupt is located
+upon completion of a service routine, the cpu | resumes the interrupcted computation.
+what must a good interrupt do | must transfer control to the appropriate interrupt service routine quickly
+why can a table of pointers to interrupt routines be used to specify what should be done on interrupt | because the system has a predefined number of interrupts possible defined already.
+where is the table of pointers stored | in low memory
+what is the interrupt vector | the array of subroutine addresses indexed by unique device number
+how does a interrupt request get a correct subroutine | by passing the unique device number allong with the interrupt request 
+if an interrupt routine needs to modify the processor state (by modifying register values say) it will have to | explicitly save the current state and restore that state before returning.
+after an interrupt is serviced what happens | the saved return address is loaded into the program counter and the interrupted computation resumes like the interrupt had not occured
+general purpose computres run most of their programs from | rewriteable memory, main memory (RAM)
+main memory is called DRAM because it is | commonly implemented in semiconductor technology
+static memory is stored in | ROM 
+all memory provide an array of | words (2 bytes)
+each word has it's own | address.
+interaction with memory is achieved through a sequuence of | load and sctore instructions to a given memory address.
+the load instruction | moves a word from main memory to an internal register in the cpu
+the store instruction | moves the content of a register to main memory.
+a typical instruction execution cycle on a system with a von Neumann archetecture does | fetch the instruction from memory, stores that instruciton in the instruction register, decode and fetch operands from memory, execute instructions on operands, store the result back in memory.
+what is the only thing that the memory unit see's | a stream of memory addresses, it doesn't know how they are generated, or how they are generated.
+we want programs and data to reside in main memory permanentsy, this is not possible because | main memory is to small to store all needed programs and data permanently + main memory is volatile and will be wiped when it loses power
+secondary storage is able to | hold large quantities of data permanently
+the most common secondary storage device is a | magnetic disk which provides storage for programs and data
+each storage system provides basic function of | storing a datum and holding on to that datum
+the differences in storage systems come from | speed cost size and volatility
+what is the order of the storage device hierarchy from top to bottom | registers, cache, main memory, electronic disk, magnetic disk, optical disk, magnetic tapes
+how does flash memory compare to DRAM | flash memory is slower but non-volatile
+NVRAM is | DRAM with a battery backup, making it nonvolatile
+memory caches can be installed to improve memory performance where | a large acces-time or transfer rate disparity exists between two components
+why is so much os code dedicated to IO | io is important to the reliability and performance of a system and because of the varying nature of io devices
+a general purpose computer system consists of | CPU's + multiple device controlles connected through a common bus
+device controllers maintains what memory | local buffer storage + a set of special purpose registers
+a device controller is responsibel for | moving data between the perpheral devices it controls and it's local buffer storage
+operating systems have a _ for each device controller | device driver
+device drivers do what | understand the device contreller and present a uniform interface to the device to the rest of the os
+in an io operation what 5 operations occur | the device driver 1.loads the appropriate registers within the device controller, 2.the controller examines those registers to determine what actions to take. 3. The contreller then starts transfering data from the devic into it's local buffer. 4. upon completioin the device controller tells the device drive with an interrupt that it's done the operation. the 5. device driver returns control to the os with data or a pointer to data|
+what is DMA used for | direct memory access is used for transfering bulk data movement such as disk io
+why is a DMA faster that regular interrupt driven io | one interrupt is generated / block of memory to the device driver to tell it the operation was completed, rather than one interrupt / byte generated for low speed devices.
