@@ -1,4 +1,4 @@
-#314 notes
+# 314 - Operating Systems notes
 
 this repository contains all of the `.csv` files I am using to keep notes on Athabasc U course #314 - Operating Systems.
 
@@ -11,4 +11,4 @@ I am using a software called anki in order to parse these `.csv` files into flas
 - import cards into that deck from any of the files within this repo (make sure to change delimeter from `,` to `|`
 
 
-_happy studying :D:_
+_Happy Studying :sunglasses:_
